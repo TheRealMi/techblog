@@ -6,7 +6,7 @@
   {{#if comments.length}}
   {{#each comments as |comment|}}
   <p>{{comment.body}}</p>
-  <p>Created by {{comment.username}} on {{format_date comment.date_created}}</p>
+  <p>Created by {{comment.user.username}} on {{format_date comment.date_created}}</p>
   {{/each}}
   {{/if}}  
 

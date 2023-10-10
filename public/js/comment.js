@@ -3,7 +3,8 @@ const commentFormHandler = async (event) => {
 
     // Collect comment from form
     const comment = document.querySelector('#comment').value;
-    const blog_id = event.target.getAttribute('data-id')
+    // Get corresponding blog id from form
+    const blog_id = event.target.getAttribute('data-id');
     if (comment) {
         // Send POST request to API endpoint
         const response = await fetch('/api/comments/',{
